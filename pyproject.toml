@@ -1,0 +1,20 @@
+[project]
+name = "gradio-chat-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Satwik Kumar", email = "satwikkr393@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=6.30.0",
+    "ollama>=0.6.3",
+]
+
+[project.scripts]
+gradio-chat-bot = "gradio_chat_bot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
